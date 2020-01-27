@@ -17,25 +17,48 @@ public class Oop {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Scanner scan = new Scanner(System.in);
-        System.out.println
-        ( "=============================\n"
-        + "Construction Supply Inventory\n"
-        + "=============================\n"
-        + "[1] Add items\n"
-        + "[2] Delete items\n"
-        + "[3] Check Supplies\n"
-        + "=============================\n"
-        + "[0] Exit system\n\n"
-        + "Choice  : ");
-        int choice = scan.nextInt();
+        boolean run = true;
         
-        if (choice == 1){
-            System.out.println("test test");
-        }
-        if (choice == 2){
-            
-        }
+        do{      
+            Scanner scan = new Scanner(System.in);
+            System.out.println
+            ( "=============================\n"
+            + "Construction Supply Inventory\n"
+            + "=============================\n"
+            + "[1] Edit Inventory\n"
+            + "[2] Current Order Status\n"
+            + "[3] History\n"
+            + "=============================\n"
+            + "[0] Exit system\n\n"
+            + "Choice  : ");
+            int choice = scan.nextInt();
+
+            if (choice == 1){
+                clearScreen();
+                System.out.println("test test");
+            }
+            else if (choice == 2){
+                clearScreen();
+                System.out.println("[4]");
+            }
+            else if (choice == 3){
+                clearScreen();
+                System.out.println("testing history");
+                
+            }
+            else if (choice == 4){
+                clearScreen();
+                System.out.println
+                ("==================\n"
+                + "   System End   \n"
+                + "==================\n");
+                run = false;
+            }
+        }while( run == true);
+    }
+    public static void clearScreen() {  
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();  
     }
     
 }
