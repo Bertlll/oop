@@ -33,6 +33,9 @@ public class Oop {
         if (choice == 1){
             System.out.println("test test");
         }
+        if (choice == 2){
+            
+        }
     }
     
 }
