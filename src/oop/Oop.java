@@ -31,7 +31,7 @@ public class Oop {
         int choice = scan.nextInt();
         
         if (choice == 1){
-            
+            System.out.println("test test");
         }
     }
     
