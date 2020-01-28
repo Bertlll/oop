@@ -39,12 +39,9 @@ public class editInv {
                 
             }
             else if(iChoice == 2){
-                ads.addInv();
-            }
-            //        
-            else if(iChoice == 2){
                 a.addInv();
             }
+            //        
             else if(iChoice == 3){
                 System.out.println("\nHi Juless XD\n");
             }
