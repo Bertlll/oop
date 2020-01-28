@@ -14,9 +14,11 @@ import java.util.Scanner;
 public class addInv {
     public static Scanner scan_add= new Scanner(System.in);
     Item z= new Item();
-  
-    public void addInv(){
+    boolean addLoop=true;
     
+    
+    public void addInv(){
+    do{
     System.out.println
             ( "\n\n"
             + "=============================\n"
@@ -47,8 +49,9 @@ public class addInv {
             z.setItemcount(scan_add.nextInt());
         }
         else if (choice==4) {
-            
+            addLoop=false;
+            break;
         }
+    }while(addLoop==true);
     }
-    
 }

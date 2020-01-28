@@ -39,17 +39,18 @@ public class Menu {
     }
     
     public void addItems(){
-        for (int x=0; x<50; ++x)
-            System.out.println
-            ( "=============================\n"
-            + "         Add Items           \n"
-            + "=============================\n"
-            + "[1] Concrete\n"
-            + "[2] Steel\n"
-            + "[3] Lumber\n"
-            + "\n[4] Return to previous menu\n"
-            + "=============================\n"
-            + "Choice: ");
+        //for (int x=0; x<50; ++x)
+            //System.out.println
+            //( "=============================\n"
+            //+ "         Add Items           \n"
+            //+ "=============================\n"
+            //+ "[1] Concrete\n"
+            //+ "[2] Steel\n"
+            //+ "[3] Lumber\n"
+            //+ "\n[4] Return to previous menu\n"
+            //+ "=============================\n"
+            //+ "Choice: ");
+        
     }
     
     public void reduceItems() {

@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class editInv {
     public void editinventory(){
         boolean iLoop = true;
+        addInv ads=new addInv();
         //============================
         do{
             Scanner iScan = new Scanner (System.in);
@@ -33,19 +34,17 @@ public class editInv {
             int iChoice = iScan.nextInt();
 
             if(iChoice == 1){
-                System.out.println("\nyeet wala pa\n");
+                
             }
             else if(iChoice == 2){
-                System.out.println("\n wla parin hahahahha\n");
+                ads.addInv();
             }
             else if(iChoice == 3){
                 System.out.println("\nHi Juless XD\n");
             }
             else if(iChoice == 4){
                 iLoop = false;
-            }
-            else{
-                iLoop = true;
+                break;
             }
         }while(iLoop == true);
         //==============================
