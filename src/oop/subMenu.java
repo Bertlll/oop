@@ -11,5 +11,4 @@ package oop;
  */
 public interface subMenu {
     public void menu();
-    public void 
 }

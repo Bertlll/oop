@@ -16,49 +16,56 @@ public class Oop {
     /**
      * @param args the command line arguments
      */
+    
+    
     public static void main(String[] args) {
         boolean run = true;
+        editInv i = new editInv();
         
         do{      
+            //-----------------------------------
             Scanner scan = new Scanner(System.in);
             System.out.println
-            ( "=============================\n"
+            ( "\n\n"
+            + "=============================\n"
             + "Construction Supply Inventory\n"
             + "=============================\n"
             + "[1] Edit Inventory\n"
             + "[2] Current Order Status\n"
             + "[3] History\n"
             + "=============================\n"
-            + "[0] Exit system\n\n"
-            + "Choice  : ");
+            + "[4] Exit system\n\n"
+            );
+            System.out.print("Choice  : ");
             int choice = scan.nextInt();
-
+            //------------------------------------
             if (choice == 1){
-                clearScreen();
-                System.out.println("test test");
+//                clearScreen();
+                i.editinventory();
             }
             else if (choice == 2){
-                clearScreen();
+//                clearScreen();
                 System.out.println("[4]");
             }
             else if (choice == 3){
-                clearScreen();
+//                clearScreen();
                 System.out.println("testing history");
                 
             }
             else if (choice == 4){
-                clearScreen();
+//                clearScreen();
                 System.out.println
-                ("==================\n"
-                + "   System End   \n"
+                ( "\n\n"
+                + "==================\n"
+                + "   System End     \n"
                 + "==================\n");
                 run = false;
             }
         }while( run == true);
     }
-    public static void clearScreen() {  
-        System.out.print("\033[H\033[2J");  
-        System.out.flush();  
-    }
+//    public static void clearScreen() {  
+//        System.out.print("\033[H\033[2J");  
+//        System.out.flush();  
+//    }
     
 }
