@@ -9,13 +9,16 @@ package oop;
  *
  * @author Julianne Catalan
  */
-public abstract class Item {
+public class Item {
     private String itemtype;
     private int itemcount;
     
     public Item(String itemtype, int itemcount){
         this.itemtype= itemtype;
         this.itemcount= itemcount;
+    }
+
+    Item() {
     }
 
     public String getItemtype() {
@@ -33,5 +36,6 @@ public abstract class Item {
     public void setItemcount(int itemcount) {
         this.itemcount = itemcount;
     }
+    
     
 }

@@ -23,6 +23,7 @@ public class Menu {
         + "Choice: ");
     }
     
+    //???????? so irurun yung buong menu 50 times?? -- Bert
     public void editInventory(){
         for (int i = 0; i < 50; ++i) 
             System.out.println
