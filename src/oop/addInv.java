@@ -15,8 +15,7 @@ public class addInv {
     Menu    m = new Menu();
     public static Scanner scan_add= new Scanner(System.in);
     Item z= new Item();
-  
-    public void addInv(){
+    boolean addLoop=true;
     
     m.addItems();
     int choice=scan_add.nextInt();
@@ -37,8 +36,9 @@ public class addInv {
             z.setItemcount(scan_add.nextInt());
         }
         else if (choice==4) {
-            
+            addLoop=false;
+            break;
         }
+    }while(addLoop==true);
     }
-    
 }

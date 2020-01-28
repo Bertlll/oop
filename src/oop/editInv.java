@@ -16,6 +16,7 @@ public class editInv {
         addInv a = new addInv();
         
         boolean iLoop = true;
+        addInv ads=new addInv();
         //============================
         do{
             Scanner iScan = new Scanner (System.in);
@@ -36,7 +37,9 @@ public class editInv {
 
             if(iChoice == 1){
                 
-                System.out.println("\n wla parin hahahahha\n");
+            }
+            else if(iChoice == 2){
+                ads.addInv();
             }
             //        
             else if(iChoice == 2){
@@ -47,9 +50,7 @@ public class editInv {
             }
             else if(iChoice == 4){
                 iLoop = false;
-            }
-            else{
-                iLoop = true;
+                break;
             }
         }while(iLoop == true);
         //==============================
