@@ -9,6 +9,6 @@ package oop;
  *
  * @author Albert Zedrick Dela
  */
-public interface subMenu {
-    public void menu();
+public class Factory {
+    
 }

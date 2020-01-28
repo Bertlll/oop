@@ -12,23 +12,13 @@ import java.util.Scanner;
  * @author Julianne Catalan
  */
 public class addInv {
+    Menu    m = new Menu();
     public static Scanner scan_add= new Scanner(System.in);
     Item z= new Item();
   
     public void addInv(){
     
-    System.out.println
-            ( "\n\n"
-            + "=============================\n"
-            + "   Add Inventory\n"
-            + "=============================\n"
-            + "[1] Concrete\n"
-            + "[2] Steel\n"
-            + "[3] Lumber\n"
-            + "=============================\n"
-            + "[4] Return to menu\n\n"
-            );
-    System.out.println("Choice: ");
+    m.addItems();
     int choice=scan_add.nextInt();
     
         if (choice==1) {

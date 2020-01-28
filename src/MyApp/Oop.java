@@ -23,21 +23,11 @@ public class Oop {
         editInv i = new editInv();
         current c = new current();
         History h = new History();
+        Menu    m = new Menu();
         
         do{      
             Scanner scan = new Scanner(System.in);
-            System.out.println
-            ( "\n\n"
-            + "=============================\n"
-            + "Construction Supply Inventory\n"
-            + "=============================\n"
-            + "[1] Edit Inventory\n"
-            + "[2] Current Order Status\n"
-            + "[3] History\n"
-            + "=============================\n"
-            + "[4] Exit system\n\n"
-            );
-            System.out.print("Choice  : ");
+            m.printMenu();
             int choice = scan.nextInt();
             
             if (choice == 1){

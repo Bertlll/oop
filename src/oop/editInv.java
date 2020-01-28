@@ -13,6 +13,8 @@ import java.util.Scanner;
  */
 public class editInv {
     public void editinventory(){
+        addInv a = new addInv();
+        
         boolean iLoop = true;
         //============================
         do{
@@ -33,10 +35,12 @@ public class editInv {
             int iChoice = iScan.nextInt();
 
             if(iChoice == 1){
-                System.out.println("\nyeet wala pa\n");
-            }
-            else if(iChoice == 2){
+                
                 System.out.println("\n wla parin hahahahha\n");
+            }
+            //        
+            else if(iChoice == 2){
+                a.addInv();
             }
             else if(iChoice == 3){
                 System.out.println("\nHi Juless XD\n");
